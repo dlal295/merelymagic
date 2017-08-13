@@ -1,0 +1,55 @@
+div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+	width: 45%;
+}
+
+.quote {
+	font-size: 18px;
+	font-style: italic;
+}
+
+.right {
+	float: right;
+	width: 50%;
+}
+
+.title {
+	display: block;
+	font-size: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#title {
+	font-style: italic;
+	text-align: center;
+}
+
+#main {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%
+}
+
+#mac-alum {
+	font-style: italic;
+	width: 100%;
+}
+
+#footer {
+	text-align: center;
+}
