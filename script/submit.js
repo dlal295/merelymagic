@@ -5,9 +5,20 @@ $(document).ready(function(){
 		console.log($(this).attr('action'));
 		console.log($(this).serialize());
 		$.post($(this).attr('action'), $(this).serialize(), function(res){
-			console.log("post up");
 			console.log(res);
-		}, 'json');
+			if (res['success']) {
+				console.log("success");
+			} else if (!res['validEmail']) {
+				console.log("invalid email");
+			} else {
+				console.log("an error occurred");
+			}
+		}, 'json')
+			.fail(function(xhr, textStatus, err){
+				console.log(xhr);
+				console.log(textStatus);
+				console.log(err);
+			});
 		// $.ajax({ 
   //           url: './script/send_email.php',
   //           type: 'POST',
