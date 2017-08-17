@@ -2,6 +2,8 @@
 	<head>
 		<title>Merely Magic</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="script/submit.js"></script>
 	</head>
 	<body>
 		<div id="title">
@@ -40,11 +42,13 @@
 				Make your event truly memorable with Merely Magic!
 				<br />
 				<div id="booking-info" class="center" style="width: 100%">
-					<input id="name" class="left input-field" type="text" name="Name" placeholder="Name" />
-					<input id="email" class="right input-field" type="text" name="Email" placeholder="Email" />
-					<input id="subject" class="input-field" type="text" name="Subject" placeholder="Subject" />
-					<textarea id="message" class="input-field" name="Message" placeholder="Message" rows="4"></textarea>
-					<input type="submit" value="Send" />
+					<form id="email-form" action="script/send_email.php" method="post">
+						<input id="name" class="left input-field" type="text" name="name" placeholder="Name" />
+						<input id="email" class="right input-field" type="text" name="email" placeholder="Email" />
+						<input id="subject" class="input-field" type="text" name="subject" placeholder="Subject" />
+						<textarea id="message" class="input-field" name="message" placeholder="Message" rows="4"></textarea>
+						<input type="submit" value="Send" />
+					</form>
 				</div>
 			</div>
 		</div>
